@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Humback test {{ version }}</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>Humback Test</header> <br>
+
+    <br>
+
+    <div class="container">
+        <div class="get-app-container">
+            <details>
+                <summary>Get app</summary>
+
+                <form action="/get-app" method="post">
+
+                    <input type="text" name="name" placeholder="App name"> <br>
+                    <input type="text" name="url" placeholder="Humbackfile URL"> <br>
+
+                    <br>
+
+                    <input type="submit" value="Get app">
+
+                    <div class="getapp-status-container">
+                        {{ getapp_status }}
+                    </div>
+
+                </form>
+            </details>
+        </div>
+
+        <div class="test-app-container">
+            <details>
+                <summary>Test app</summary>
+
+                <p><i>I'm working for it...</i></p>
+
+                <div class="testapp-status-container">
+                        {{ testapp_status }}
+                </div>
+
+            </details>
+        </div>
+    </div>
+
+</body>
+</html>
